@@ -1,0 +1,65 @@
+/* CSS Document */
+*, *::after, *::before {
+  box-sizing:border-box;  
+  margin: 0 auto;
+  font-family: Frutiger;
+}
+
+#eerstemenu{
+	background-color: #f4f7fc;
+	width: 100%;
+	height: 32px;
+}
+
+
+#eerstemenu ul{
+float: right;
+	padding: 8px;
+
+}
+
+#eerstemenu ul li{
+	display: inline;
+	color: #141251;
+	padding: 10px 25px;
+	font-size: 13px;
+
+}
+
+#eerstemenu ul li:first-child{
+	background-color: #ffff;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+	margin: 0 -90px;
+}
+
+header div{
+padding: 15px;
+}
+
+header img{
+	height: 45px;
+	width: auto; 
+}
+
+header ul{
+padding: 15px 0px;
+}
+
+header ul li{
+	display: inline;
+	color: #141251;
+	padding: 29px 15px;
+}
+
+header ul li:hover{
+    border-bottom: 4px solid #3531c3;
+	cursor: pointer;
+}
+
+.banner img{
+	width: 100%;
+}
