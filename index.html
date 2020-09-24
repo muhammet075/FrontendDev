@@ -6,6 +6,7 @@
 	<meta name="author" content="jouw naam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<script src="https://kit.fontawesome.com/82b5bc49eb.js" crossorigin="anonymous"></script>
 	<link href='https://fonts.googleapis.com/css?family=Frutiger' rel='stylesheet'>
 
 	<title>Schiphol</title>
@@ -16,47 +17,58 @@
 <body>
 
 
-	<div id="eerstemenu">
-			<ul>
-				<li>Reizigers</li>
-				<li>Alle Schiphol websites</li>
-			</ul>	
-			</div>
-
-
 
 	<header>
-	
-		<div class="logoimg">
-			<img src="images/schiphol_logo.png" alt="Logo van Schiphol">
-		</div>
+
+		<ul>
+			<li class="hamburger"> <label for="toggle"><i class="fas fa-bars"></i></label>
+				<input type="checkbox" id="toggle" /></li>
+		</ul>
+
+		<img src="images/schiphol_logo.png" />
 
 
-		<div>
-			<ul>
-				<li>Vluchten</li>
-				<li>Parkeren & Vervoer</li>
-				<li>Op Schiphol</li>
-				<li>Services</li>
-			</ul>
-		</div>
+		<ul>
+			<li><i class="fas fa-user-alt"></i></li>
+			<li><i class="fas fa-search"></i></li>
+		</ul>
 
-		<div>
-			<ul>
-				<li>Inloggen</li>
-				<li>Zoeken</li>
-				<li>EN</li>
-				<li>NL</li>
-			</ul>
-		</div>
+
 
 	</header>
+
+
+	<div class="hamburger-menu displaynone">
+		
+		<i class="far fa-times-circle menu-sluiten"></i>
+
+
+		<ul>
+			<li>Reizigers</li>
+			<li>Vluchten</li>
+			<li>Parkeren en vervoer</li>
+			<li>Op Schiphol</li>
+			<li>Services</li>
+		</ul>
+		
+		<ul>
+			<li>Meer over Schiphol</li>
+			<li>Alle Schiphol websites</li>
+		</ul>
+
+	</div>
+
+
+	<!-- HAMBURGER MENU -->
+
 
 	<section class="banner">
 		<img src="images/bannerfoto.jpg">
 	</section>
 
-	<script src="scripts/script.js"></script>
+	<script src="scripts/script.js">
+	</script>
+
 </body>
 
 </html>

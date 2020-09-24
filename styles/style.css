@@ -1,65 +1,71 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
-  margin: 0 auto;
-  font-family: Frutiger;
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0 auto;
 }
 
-#eerstemenu{
-	background-color: #f4f7fc;
+h1,
+h2,
+p,
+ul,
+ul li,
+a {
+	font-family: Frutiger;
+}
+
+.displaynone {
+	display: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+header img {
+	width: 150px;
+}
+
+header ul {
+	list-style-type: none;
+	display: inline-flex;
+	padding: 0px;
+	margin: 0px 10px;
+}
+
+header ul li {
+	padding: 0 10px;
+	margin: auto;
+}
+
+.banner img {
 	width: 100%;
-	height: 32px;
 }
 
-
-#eerstemenu ul{
-float: right;
-	padding: 8px;
-
-}
-
-#eerstemenu ul li{
-	display: inline;
-	color: #141251;
-	padding: 10px 25px;
-	font-size: 13px;
-
-}
-
-#eerstemenu ul li:first-child{
+.hamburger-menu {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	height: 100%;
 	background-color: #ffff;
 }
 
-header{
-  display: flex;
-  justify-content: space-between;
-	margin: 0 -90px;
+.hamburger-menu ul{
+		list-style-type: none;
 }
 
-header div{
-padding: 15px;
+.hamburger-menu ul li{
+		font-family: Frutiger;
+	font-size: 2em;
+	padding: 20px 0px;
 }
 
-header img{
-	height: 45px;
-	width: auto; 
+#toggle {
+	display: none;
 }
 
-header ul{
-padding: 15px 0px;
-}
 
-header ul li{
-	display: inline;
-	color: #141251;
-	padding: 29px 15px;
-}
 
-header ul li:hover{
-    border-bottom: 4px solid #3531c3;
-	cursor: pointer;
-}
 
-.banner img{
-	width: 100%;
-}
