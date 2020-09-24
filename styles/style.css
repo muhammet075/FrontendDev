@@ -26,6 +26,7 @@ header {
 
 header img {
 	width: 150px;
+	height: auto;
 }
 
 header ul {
