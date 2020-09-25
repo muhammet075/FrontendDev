@@ -7,12 +7,13 @@
 }
 
 h1,
-h2,
+h2, h3,
 p,
 ul,
 ul li,
 a {
 	font-family: Frutiger;
+	color: #141251;
 }
 
 .displaynone {
@@ -64,7 +65,7 @@ header ul li {
     padding: 12px 0px;
 }
 
-#toggle {
+#schakel {
 	display: none;
 }
 
@@ -75,5 +76,32 @@ header ul li {
     padding: 10px;
 }
 
+.informatie-content h2{
+	padding: 0px 20px;
+}
 
+.informatie-content section{
+  box-shadow: 10px 10px 5px #e6e6e682;
+	margin: 20px;	
+}
 
+.informatie-content section:hover{
+	cursor: pointer;
+  box-shadow: 10px 10px 5px #969696c7;
+	transition: 0.5s;
+	
+}
+
+.informatie-content section p,h3,a{
+	padding: 15px;
+	line-height: 25px;
+}
+
+.informatie-content section a{
+	line-height: 50px;
+}
+
+.informatie-content section img{
+	width: 100%;
+	height: 180px;
+}
