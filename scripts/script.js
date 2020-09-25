@@ -11,7 +11,6 @@ function openHamburgermenu() {
 
 	if (checkbox.checked == true) {
 
-		//de smokeramen worden getoond
 		console.log("test");
 		hamburgermenu.classList.remove("displaynone");
 
