@@ -8,7 +8,7 @@
 
 @font-face{
 font-family: "Frutiger";
-src: url("font/Frutiger.tff")
+src: url("font/Frutiger.tff") format('opentype');; 
 }
 
 h1,
