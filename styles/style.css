@@ -1,13 +1,14 @@
 /* CSS Document */
-
-@import url(http://fonts.googleapis.com/css?family=Frutiger);
-
-
 *,
 *::after,
 *::before {
 	box-sizing: border-box;
 	margin: 0 auto;
+}
+
+@font-face{
+font-family: "Frutiger";
+src: url("font/Frutiger.tff")
 }
 
 h1,
