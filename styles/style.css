@@ -11,23 +11,29 @@ font-family: "Frutiger";
 src: url("font/Frutiger.tff") format('opentype');; 
 }
 
-h1,
-h2, h3,
-p,
-ul,
-ul li,
-a {
+
+h1, h2, h3, p, ul, ul li, a, label, input {
 	font-family: "Frutiger", Verdana;
 	color: #141251;
 }
+
+article{
+    padding: 20px;
+}
+
 
 .displaynone {
 	display: none;
 }
 
 header {
+    position: fixed;
 	display: flex;
+    width: 100%;
+    height: auto;
 	justify-content: space-between;
+    background-color: #ffff;
+    border-bottom: 1px solid #141251;
 }
 
 header img {
@@ -47,14 +53,21 @@ header ul li {
 	margin: auto;
 }
 
+.leeg{
+    display: block;
+    width: 100%;
+    height: 50px;
+}
+
 .banner img {
 	width: 100%;
 }
 
 .hamburger-menu {
-	position: absolute;
+	position: fixed;
 	width: 100%;
 	top: 0;
+    margin-top: 51px;
 	height: 100%;
 	background-color: #ffff;
 }
@@ -65,7 +78,6 @@ header ul li {
 }
 
 .hamburger-menu ul li{
-	font-family: Frutiger;
     font-size: 1.2em;
     padding: 12px 0px;
 }
@@ -79,21 +91,137 @@ header ul li {
 	float: right;
     font-size: 30px;
     padding: 10px;
+    color: #141251;
 }
 
-.informatie-content h2{
-	padding: 0px 20px;
+
+
+
+
+
+
+.jumbotron{
+    display: grid;
+    background: url("../images/bannerfoto.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.jumbotron p{
+    display: block;
+    width: 50%;
+    margin: 20px 10px;
+    float: left;
+    padding: 5px 10px;
+    text-align: center;
+    background-color: #ffff;
+}
+
+.jumbotron h1{
+    display: block;
+    width: 65%;
+    margin: 10px 10px;
+    float: left;
+    color: #ffff;
+    text-shadow: 0px 0px 10px #000
+}
+
+.jumbotron a{
+    display: block;
+    width: 45%;
+    padding: 15px 10px;
+    margin: 20px 10px;
+    text-align: center;
+    color: #ffff;
+    font-weight: 800;
+    background-color: #1b60db;
+    border-bottom: 2px solid #103880;
+}
+
+.jumbotron a:hover{
+    background-color: #508fff;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+.vluchtgegevens{
+    padding: 20px;
+}
+
+.vluchtgegevens section{
+    padding: 20px 0px 0px 0px;
+}
+
+
+.vluchtgegevens label{
+    margin-right: 5%;
+}
+
+.vluchtgegevens input{
+    margin-right: 5px;
+}
+
+.vluchtgegevens ul{
+    list-style-type: none;
+}
+
+.vluchtgegevens ul li{
+    float: left;
+}
+
+
+.vluchtgegevens section:nth-child(3){
+}
+
+.vluchtgegevens section:nth-child(3) input{
+    width: 100%;
+    padding: 20px 9px;
+    border: 1px solid #d2d2d2;
+    border-bottom: 1px solid #676767;
+    color: #1a61da;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+.informatie a{
+    display: block;
+    padding: 15px 0px 0px 0px;
+    font-size: 13px;
+    line-height: 17px;
+    color: #1a61da;
+}
+
+
+
+
+
+
+
 
 .informatie-content section{
+  margin: 20px 0px;	
   box-shadow: 10px 10px 5px #e6e6e682;
-	margin: 20px;	
 }
 
 .informatie-content section:hover{
-	cursor: pointer;
+  cursor: pointer;
   box-shadow: 10px 10px 5px #969696c7;
-	transition: 0.5s;
+  transition: 0.5s;
 	
 }
 
