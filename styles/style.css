@@ -17,6 +17,11 @@ h1, h2, h3, p, ul, ul li, a, label, input {
 	color: #141251;
 }
 
+h2{
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+
 article{
     padding: 20px;
 }
@@ -152,7 +157,9 @@ header ul li {
 
 
 
-
+.vluchtgegevens-desktop{
+    display: none;
+}
 
 .vluchtgegevens{
     padding: 20px;
@@ -192,19 +199,22 @@ header ul li {
     margin-top: 15px;
 }
 
-
-
-
-
-
-
-.informatie a{
+@media only screen and (min-width: 800px) {
+    .vluchtgegevens{
+    display: none;
+    }
+    
+    
+.vluchtgegevens-desktop{
     display: block;
-    padding: 15px 0px 0px 0px;
-    font-size: 13px;
-    line-height: 17px;
-    color: #1a61da;
+    background-color: red;
+    position: absolute;
+    margin: auto;
+    right: 5%;
+    padding: 50px 5px;
+}   
 }
+
 
 
 
@@ -225,6 +235,14 @@ header ul li {
 	
 }
 
+.informatie a{
+    display: block;
+    padding: 15px 0px 0px 0px;
+    font-size: 13px;
+    line-height: 17px;
+    color: #1a61da;
+}
+
 .informatie-content section p,h3,a{
 	padding: 15px;
 	line-height: 25px;
@@ -232,9 +250,114 @@ header ul li {
 
 .informatie-content section a{
 	line-height: 50px;
+    color: #1a61da;
 }
 
 .informatie-content section img{
-	width: 100%;
-	height: 180px;
+    width: 100%;
+    height: auto;
+}
+
+.informatie h2{
+    padding: 0px;
+}
+
+
+@media only screen and (min-width: 600px) {
+    
+    .informatie-content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+    }
+    
+}
+
+@media only screen and (min-width: 960px) {
+    
+    .informatie-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    padding: 10px 10%;
+    }
+    
+    h2, .informatie{
+    padding: 10px 10%;
+    }
+    
+    .informatie h2, .handicap h2{
+        padding: 0px;
+    }
+        
+}
+
+
+
+
+
+
+.weetjes{
+    background-color: #f4f7fb;
+}
+
+.weetjes section{
+    background-color: #ffff;
+}
+
+.weetjes section:hover{
+    cursor: default;
+}
+
+.weetjes p{
+    font-weight: 600;
+}
+
+.weetjes a{
+    color: #1b60db;
+
+}
+
+.weetjes section h3{
+    padding: 15px;
+}
+
+.weetjes section p, a{
+    padding: 20px 20px 0px 20px;
+}
+
+.weetjes section a:last-child{
+    display: block;
+    padding: 0px 20px 27px 20px;
+}
+
+
+
+
+
+
+.handicap{
+    display: flex;
+    padding: 25px;
+}
+
+.handicap i{
+    margin: auto;
+    font-size: 35px;
+    color: #1a61da;
+}
+
+.handicap h2{
+   font-size: 17px;
+}
+
+.handicap section a{
+   font-size: 15px;
+   padding: 0px;
+   color: #1a61da;
+}
+
+.handicap section a i{
+   font-size: 15px;
+
 }
