@@ -19,7 +19,7 @@
 
     <header>
 
-        <ul>
+        <ul class="mobiel-ul">
             <li class="hamburger"><label for="schakel"><i class="fas fa-bars"></i> Menu</label>
                 <input type="checkbox" id="schakel" />
             </li>
@@ -27,6 +27,12 @@
 
         <img src="images/schiphol_logo.png" />
 
+        <ul class="desktop-ul">
+            <li>Vluchten</li>
+            <li>Parkeren en vervoer</li>
+            <li>Op Schiphol</li>
+            <li>Services</li>
+        </ul>
 
         <ul>
             <li><i class="fas fa-user-alt"></i></li>
@@ -36,8 +42,6 @@
 
 
     </header>
-
-    <section class="leeg"></section>
 
     <div class="hamburger-menu displaynone">
 
@@ -60,53 +64,64 @@
     </div>
 
     <div class="jumbotron">
-        
-        <p>Amsterdam Airport</p>
 
-        <h1>Ready for your next journey</h1>
+        <div class="jumbotron-inner">
+            <p>Amsterdam Airport</p>
 
-        <a>Voor je vliegt <i class="fas fa-arrow-right"></i></a>
-        
-            <div class="vluchtgegevens-desktop">
-            <h2>Zoek je vlucht</h2>
+            <h1>Ready for your next journey</h1>
+
+            <a>Voor je vliegt <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+
+
+        <div class="vluchtgegevens-desktop">
+
+            <h2>Vind een vlucht</h2>
+
+            <section class="radiobuttons">
+                <input type="radio" id="vertrek" value="vertrek"><label for="vertrek">Vertrek</label>
+                <input type="radio" id="aankomst" value="aankomst"><label for="aankomst">Aankomst</label>
+            </section>
+
+            <section>
+                <select id="datum" name="Datum">
+                    <option value="gisteren">Gisteren</option>
+                    <option value="vandaag">Vandaag</option>
+                    <option value="morgen">Morgen</option>
+                </select>
+
+                <input type="textfield" id="bestemming" placeholder="Bestemming">
+            </section>
+        </div>
+
+    </div>
+
+
+
+    <article class="vluchtgegevens">
+        <h2>Vind een vlucht</h2>
         <section>
             <input type="radio" id="vertrek" value="vertrek"><label for="vertrek">Vertrek</label>
             <input type="radio" id="aankomst" value="aankomst"><label for="aankomst">Aankomst</label>
         </section>
-        
+
         <section>
-        <input type="textfield" id="datum" value="Datum">
-        <input type="textfield" id="bestemming" value="Bestemming">
-        </section>
-    </div>
-
-    </div>
-       
-
-
-        <h2>Zoek je vlucht</h2>
-        <article class="vluchtgegevens">
-       <section>
-            <input type="radio" id="vertrek" value="vertrek"><label for="vertrek">Vertrek</label>
-            <input type="radio" id="aankomst" value="aankomst"><label for="aankomst">Aankomst</label>
-        </section>
-        
-        <section>
-        <input type="textfield" id="datum" value="Datum">
-        <input type="textfield" id="bestemming" value="Bestemming">
+            <input type="textfield" id="datum" value="Datum">
+            <input type="textfield" id="bestemming" value="Bestemming">
         </section>
 
     </article>
-    
-    
 
 
 
-<article class="informatie">
-    <h2>Belangrijke informatie over jouw reisdag</h2>
-    <a>25 t/m 27 september: Rijstroken A4 dicht, afrit Schiphol hele weekend afgesloten <i class="fas fa-arrow-right"></i></a>
-    <a>Actuele informatie over het coronavirus en Schiphol <i class="fas fa-arrow-right"></i></a>
-</article>
+
+
+    <article class="informatie">
+        <h2>Belangrijke informatie over jouw reisdag</h2>
+        <a>25 t/m 27 september: Rijstroken A4 dicht, afrit Schiphol hele weekend afgesloten <i class="fas fa-arrow-right"></i></a>
+        <a>Actuele informatie over het coronavirus en Schiphol <i class="fas fa-arrow-right"></i></a>
+    </article>
 
 
 
@@ -143,17 +158,17 @@
     </article>
 
 
-        <h2>Goed om te weten</h2>
+    <h2>Goed om te weten</h2>
     <article class="informatie-content weetjes">
 
         <section>
             <h3>Klaar voor vertrek?</h3>
             <p>Check-in en bagage drop-off</p>
             <a>Zo start je reis soepel <i class="fas fa-arrow-right"></i></a>
-            
+
             <p>Door security</p>
             <a>Snel en veilig door de controle <i class="fas fa-arrow-right"></i></a>
-            
+
             <p>Bagageregels</p>
             <a>Wat mag mee? Wat niet? <i class="fas fa-arrow-right"></i></a>
         </section>
@@ -162,10 +177,10 @@
             <h3>Op de luchthaven</h3>
             <p>Gevonden voorwerpen</p>
             <a>Heb je iets verloren? <i class="fas fa-arrow-right"></i></a>
-            
+
             <p>Gratis wifi</p>
             <a>Geen seconde zonder <i class="fas fa-arrow-right"></i></a>
-            
+
             <p>Plattegronden</p>
             <a>Kijk waar je moet zijn <i class="fas fa-arrow-right"></i></a>
         </section>
@@ -175,22 +190,22 @@
             <h3>Ophalen of wegbrengen</h3>
             <p>Ophalen</p>
             <a>Handig: P1 Kort Parkeren <i class="fas fa-arrow-right"></i></a>
-            
+
             <p>Wegbrengen</p>
             <a>Snel afzetten? Kiss &#38; Ride <i class="fas fa-arrow-right"></i></a>
-            
+
             <p>Alle parkeeropties</p>
             <a>Altijd een passende plek <i class="fas fa-arrow-right"></i></a>
         </section>
-        
+
     </article>
-    
-    
-    
-    
-    
-    
-            <h2>Info voor Schiphol bezoekers</h2>
+
+
+
+
+
+
+    <h2>Info voor Schiphol bezoekers</h2>
     <article class="informatie-content corona-info">
 
         <section>
@@ -241,16 +256,52 @@
 
 
 
-<div class="handicap">
-    
-    <i class="fas fa-wheelchair"></i>
-    <section>
-    <h2>Heb je extra hulp nodig?</h2>
-    <a>Lees alles over assistentie <i class="fas fa-arrow-right"></i></a>
-    </section>
-    
-</div>
+    <div class="handicap">
 
+        <i class="fas fa-wheelchair"></i>
+        <section>
+            <h2>Heb je extra hulp nodig?</h2>
+            <a>Lees alles over assistentie <i class="fas fa-arrow-right"></i></a>
+        </section>
+
+    </div>
+    <footer>
+        <ul>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+        </ul>
+
+        <ul>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+        </ul>
+
+        <ul>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+            <li>he</li>
+        </ul>
+    </footer>
 
 
 

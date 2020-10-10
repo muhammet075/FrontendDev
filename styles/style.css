@@ -2,98 +2,109 @@
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
-	margin: 0 auto;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
-@font-face{
-font-family: "Frutiger";
-src: url("font/Frutiger.tff") format('opentype');; 
+@font-face {
+    font-family: "Frutiger";
+    src: url("font/Frutiger.tff") format('opentype');
+    ;
 }
 
 
-h1, h2, h3, p, ul, ul li, a, label, input {
-	font-family: "Frutiger", Verdana;
-	color: #141251;
+body {
+    max-width: 90rem;
 }
 
-h2{
+h1,
+h2,
+h3,
+p,
+ul,
+ul li,
+a,
+label,
+input {
+    font-family: "Frutiger", Verdana;
+    color: #141251;
+}
+
+h2 {
     padding: 5px 20px;
     margin-top: 20px;
 }
 
-article{
+article {
     padding: 20px;
 }
 
 
 .displaynone {
-	display: none;
+    display: none;
 }
 
 header {
-    position: fixed;
-	display: flex;
+    display: flex;
     width: 100%;
     height: auto;
-	justify-content: space-between;
+    justify-content: space-between;
     background-color: #ffff;
     border-bottom: 1px solid #141251;
 }
 
 header img {
-	width: 150px;
-	height: 50px;
+    width: auto;
+    height: 50px;
+    margin: 0px;
 }
 
 header ul {
-	list-style-type: none;
-	display: inline-flex;
-	padding: 0px;
-	margin: 0px 10px;
+    list-style-type: none;
+    display: inline-flex;
+    padding: 0px;
+    margin: 0px 10px;
 }
 
 header ul li {
-	padding: 0 10px;
-	margin: auto;
-}
-
-.leeg{
-    display: block;
-    width: 100%;
-    height: 50px;
+    padding: 0 10px;
+    margin: auto;
 }
 
 .banner img {
-	width: 100%;
+    width: 100%;
+}
+
+.desktop-ul {
+    display: none;
 }
 
 .hamburger-menu {
-	position: fixed;
-	width: 100%;
-	top: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
     margin-top: 51px;
-	height: 100%;
-	background-color: #ffff;
+    height: 100%;
+    background-color: #ffff;
 }
 
-.hamburger-menu ul{
-	list-style-type: none;
+.hamburger-menu ul {
+    list-style-type: none;
     margin: 50px 0px;
 }
 
-.hamburger-menu ul li{
+.hamburger-menu ul li {
     font-size: 1.2em;
     padding: 12px 0px;
 }
 
 #schakel {
-	display: none;
+    display: none;
 }
 
-.menu-sluiten{
-	display: block;
-	float: right;
+.menu-sluiten {
+    display: block;
+    float: right;
     font-size: 30px;
     padding: 10px;
     color: #141251;
@@ -104,93 +115,107 @@ header ul li {
 
 
 
-
-.jumbotron{
-    display: grid;
+.jumbotron {
+    display: flex;
+    padding: 20px;
     background: url("../images/bannerfoto.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.jumbotron p{
-    display: block;
-    width: 50%;
-    margin: 20px 10px;
-    float: left;
-    padding: 5px 10px;
+.jumbotron-inner p {
+    margin: 0px 0px 10px 0px;
+    width: 190px;
+    padding: 3px;
     text-align: center;
     background-color: #ffff;
+    font-weight: bold;
 }
 
-.jumbotron h1{
-    display: block;
-    width: 65%;
-    margin: 10px 10px;
-    float: left;
+.jumbotron-inner h1 {
+    margin: 0px 0px 20px 0px;
+    font-size: 35px;
     color: #ffff;
-    text-shadow: 0px 0px 10px #000
+    text-shadow: 1px 1px 6px rgb(0 0 0 / 90%);
 }
 
-.jumbotron a{
-    display: block;
-    width: 45%;
-    padding: 15px 10px;
-    margin: 20px 10px;
-    text-align: center;
-    color: #ffff;
-    font-weight: 800;
+.jumbotron-inner a {
+    color: white;
+    padding: 15px 20px;
     background-color: #1b60db;
-    border-bottom: 2px solid #103880;
+    border-bottom: 4px solid #10397d;
+    display: block;
+    width: 50%;
+    margin: 0;
 }
 
-.jumbotron a:hover{
-    background-color: #508fff;
-    transition: 0.3s;
+.jumbotron-inner a:hover {
+    cursor: pointer;
+    background-color: #154aa9;
 }
 
 
 
+#datum,
+#bestemming {
+    width: 100%;
+    padding: 12px 30px;
+    border: 1px solid #d6d6d6;
+    border-bottom: 1px solid black;
+}
+
+#datum {
+    margin-bottom: 30px;
+    color: #1961d9;
+}
+
+#bestemming {
+    color: #5d5d5d;
+}
 
 
 
+.vluchtgegevens-desktop h2 {
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+    font-size: 28px;
+}
 
+.radiobuttons {
+    margin-bottom: 30px;
+}
 
+.radiobuttons input {
+    margin: 7px;
+}
 
-.vluchtgegevens-desktop{
+.vluchtgegevens-desktop {
     display: none;
 }
 
-.vluchtgegevens{
+.vluchtgegevens {
     padding: 20px;
 }
 
-.vluchtgegevens section{
+.vluchtgegevens section {
     padding: 20px 0px 0px 0px;
 }
 
 
-.vluchtgegevens label{
-    margin-right: 5%;
-}
-
-.vluchtgegevens input{
+.vluchtgegevens input {
     margin-right: 5px;
 }
 
-.vluchtgegevens ul{
+.vluchtgegevens ul {
     list-style-type: none;
 }
 
-.vluchtgegevens ul li{
+.vluchtgegevens ul li {
     float: left;
 }
 
-
-.vluchtgegevens section:nth-child(3){
-}
-
-.vluchtgegevens section:nth-child(3) input{
+.vluchtgegevens section:nth-child(3) input {
     width: 100%;
     padding: 20px 9px;
     border: 1px solid #d2d2d2;
@@ -199,20 +224,51 @@ header ul li {
     margin-top: 15px;
 }
 
-@media only screen and (min-width: 800px) {
-    .vluchtgegevens{
-    display: none;
+@media only screen and (min-width: 900px) {
+    .vluchtgegevens {
+        display: none;
     }
-    
-    
-.vluchtgegevens-desktop{
-    display: block;
-    background-color: red;
-    position: absolute;
-    margin: auto;
-    right: 5%;
-    padding: 50px 5px;
-}   
+
+
+    .vluchtgegevens-desktop {
+        display: block;
+        background-color: #ffff;
+        margin: auto;
+        padding: 25px;
+    }
+
+
+    .desktop-ul {
+        display: block;
+
+    }
+
+    .jumbotron {
+        padding: 70px;
+    }
+
+    .jumbotron-inner {
+        max-width: 40%;
+    }
+
+    .jumbotron-inner h1 {
+        font-size: 55px;
+    }
+
+    .jumbotron-inner a {
+        width: 35%;
+    }
+
+    .desktop-ul li {
+        float: left;
+        display: block;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+    .mobiel-ul {
+        display: none;
+    }
 }
 
 
@@ -221,21 +277,19 @@ header ul li {
 
 
 
-
-
-.informatie-content section{
-  margin: 20px 0px;	
-  box-shadow: 10px 10px 5px #e6e6e682;
+.informatie-content section {
+    margin: 20px 0px;
+    box-shadow: 10px 10px 5px #e6e6e682;
 }
 
-.informatie-content section:hover{
-  cursor: pointer;
-  box-shadow: 10px 10px 5px #969696c7;
-  transition: 0.5s;
-	
+.informatie-content section:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 5px #969696c7;
+    transition: 0.5s;
+
 }
 
-.informatie a{
+.informatie a {
     display: block;
     padding: 15px 0px 0px 0px;
     font-size: 13px;
@@ -243,53 +297,58 @@ header ul li {
     color: #1a61da;
 }
 
-.informatie-content section p,h3,a{
-	padding: 15px;
-	line-height: 25px;
+.informatie-content section p,
+.informatie-content section h3 {
+    padding: 15px;
+    line-height: 25px;
 }
 
-.informatie-content section a{
-	line-height: 50px;
+.informatie-content section a {
+    line-height: 50px;
     color: #1a61da;
+    padding: 15px;
+    display: block;
 }
 
-.informatie-content section img{
+.informatie-content section img {
     width: 100%;
     height: auto;
 }
 
-.informatie h2{
+.informatie h2 {
     padding: 0px;
 }
 
 
 @media only screen and (min-width: 600px) {
-    
-    .informatie-content{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
+
+    .informatie-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
     }
-    
+
 }
 
 @media only screen and (min-width: 960px) {
-    
-    .informatie-content{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    padding: 10px 10%;
+
+    .informatie-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+        padding: 10px 10%;
     }
-    
-    h2, .informatie{
-    padding: 10px 10%;
+
+    h2,
+    .informatie {
+        padding: 10px 10%;
     }
-    
-    .informatie h2, .handicap h2{
+
+    .informatie h2,
+    .handicap h2 {
         padding: 0px;
     }
-        
+
 }
 
 
@@ -297,38 +356,37 @@ header ul li {
 
 
 
-.weetjes{
+.weetjes {
     background-color: #f4f7fb;
 }
 
-.weetjes section{
+.weetjes section {
     background-color: #ffff;
 }
 
-.weetjes section:hover{
+.weetjes section:hover {
     cursor: default;
 }
 
-.weetjes p{
+.weetjes p {
     font-weight: 600;
 }
 
-.weetjes a{
+.weetjes a {
     color: #1b60db;
 
 }
 
-.weetjes section h3{
+.weetjes section h3 {
     padding: 15px;
 }
 
-.weetjes section p, a{
-    padding: 20px 20px 0px 20px;
+.weetjes section p {
+    padding-bottom: 0px;
 }
 
-.weetjes section a:last-child{
-    display: block;
-    padding: 0px 20px 27px 20px;
+.weetjes section a {
+    padding-top: 0px;
 }
 
 
@@ -336,28 +394,56 @@ header ul li {
 
 
 
-.handicap{
+.handicap {
     display: flex;
     padding: 25px;
 }
 
-.handicap i{
+.handicap i {
     margin: auto;
     font-size: 35px;
     color: #1a61da;
 }
 
-.handicap h2{
-   font-size: 17px;
+.handicap h2 {
+    font-size: 17px;
 }
 
-.handicap section a{
-   font-size: 15px;
-   padding: 0px;
-   color: #1a61da;
+.handicap section a {
+    font-size: 15px;
+    padding: 0px;
+    color: #1a61da;
 }
 
-.handicap section a i{
-   font-size: 15px;
+.handicap section a i {
+    font-size: 15px;
 
+}
+
+
+
+
+
+
+footer {
+    flex-direction: column;
+    padding: 0px;
+    background-color: #1a61da;
+}
+
+footer ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 20px;
+}
+
+footer ul li {
+    color: #ffff;
+}
+
+@media only screen and (min-width: 960px) {
+    footer {
+        display: flex;
+        flex-direction: initial;
+    }
 }
