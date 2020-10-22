@@ -21,7 +21,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 **Screenshot(s):**
 
 -screenshot(s) van je eindresultaat-
-https://imgshare.io/images/2020/10/22/Schermafbeelding-2020-10-22-om-18.27.20.png
+![he](images/eindresultaat.png)
 
 
 ## Voortgang 3 (week 6)
@@ -67,7 +67,7 @@ https://www.schiphol.nl/
 
 **Screenshot(s):**
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/dummy-image.svg)
+![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/eindresultaat.png)
 
 **Breakdown-schets(en):**
 
