@@ -16,16 +16,17 @@
 <body>
 
 
-
+    <!-- BEGIN HEADER -->
     <header>
-
         <ul class="mobiel-ul">
             <li class="hamburger"><label for="schakel"><i class="fas fa-bars"></i> Menu</label>
                 <input type="checkbox" id="schakel" />
             </li>
         </ul>
 
-        <img src="images/schiphol_logo.png" />
+        <a href="index.html">
+            <img src="images/schiphol_logo.png" />
+        </a>
 
         <ul class="desktop-ul">
             <li>Vluchten</li>
@@ -38,11 +39,15 @@
             <li><i class="fas fa-user-alt"></i></li>
             <li><i class="fas fa-search"></i></li>
         </ul>
-
-
-
     </header>
+    <!-- EINDE HEADER -->
 
+
+
+
+
+
+    <!-- BEGIN HAMBURGER MENU -->
     <div class="hamburger-menu displaynone">
 
         <i class="far fa-times-circle menu-sluiten"></i>
@@ -62,7 +67,13 @@
         </ul>
 
     </div>
+    <!-- EINDE HAMBURGER MENU -->
 
+
+
+
+
+    <!-- BEGIN JUMBOTRON -->
     <div class="jumbotron">
 
         <div class="jumbotron-inner">
@@ -70,7 +81,7 @@
 
             <h1>Ready for your next journey</h1>
 
-            <a>Voor je vliegt <i class="fas fa-arrow-right"></i></a>
+            <a href="voorjevliegt.html">Voor je vliegt <i class="fas fa-arrow-right"></i></a>
         </div>
 
 
@@ -112,16 +123,21 @@
         </section>
 
     </article>
+    <!-- EINDE JUMBOTRON -->
 
 
 
 
 
+
+
+    <!-- BEGIN INFORMATIE -->
     <article class="informatie">
         <h2>Belangrijke informatie over jouw reisdag</h2>
         <a>25 t/m 27 september: Rijstroken A4 dicht, afrit Schiphol hele weekend afgesloten <i class="fas fa-arrow-right"></i></a>
         <a>Actuele informatie over het coronavirus en Schiphol <i class="fas fa-arrow-right"></i></a>
     </article>
+    <!-- EINDE INFORMATIE -->
 
 
 
@@ -129,22 +145,26 @@
 
 
 
-
+    <!-- BEGIN 1E INFORMATIE CONTENT -->
     <h2>Info voor Schiphol bezoekers</h2>
     <article class="informatie-content">
 
         <section>
             <img src="images/info1.png" />
             <h3>Eten en drinken</h3>
-            <p>Heb je trek of dorst? Je kan op steeds meer locaties op Schiphol terecht voor eten en drinken</p>
-            <a>Bekijk de locaties <i class="fas fa-arrow-right"></i></a>
+            <p>Heb je trek of dorst? Je kan op steeds meer locaties op Schiphol terecht voor eten en drinken, let wel op de maatregelen.</p>
+            <div class="link-bottom">
+                <a>Bekijk de locaties <i class="fas fa-arrow-right"></i></a>
+            </div>
         </section>
 
         <section>
             <img src="images/info2.png" />
             <h3>De meest gestelde vragen</h3>
             <p>Hier vind je de meest gestelde vragen over het reizen via Schiphol en de corona-maatregelen die nu van kracht zijn.</p>
-            <a>Bekijk de antwoorden <i class="fas fa-arrow-right"></i></a>
+            <div class="link-bottom">
+                <a>Bekijk de antwoorden <i class="fas fa-arrow-right"></i></a>
+            </div>
         </section>
 
 
@@ -152,12 +172,17 @@
             <img src="images/info3.png" />
             <h3>Corona-maatregelen</h3>
             <p>Van 1,5-meter afstand houden tot je gezondheidsverklaring meenemen: welke corona-maatregelen gelden er op Schiphol?</p>
-            <a>Meer over COVID-19 <i class="fas fa-arrow-right"></i></a>
+            <div class="link-bottom">
+                <a>Meer over COVID-19 <i class="fas fa-arrow-right"></i></a>
+            </div>
         </section>
 
     </article>
+    <!-- EINDE 1E INFORMATIE CONTENT -->
 
 
+
+    <!-- BEGIN 2E INFORMATIE CONTENT -->
     <h2>Goed om te weten</h2>
     <article class="informatie-content weetjes">
 
@@ -199,63 +224,77 @@
         </section>
 
     </article>
+    <!-- EINDE 2E INFORMATIE CONTENT -->
 
 
 
 
-
-
+    <!-- BEGIN 3E INFORMATIE CONTENT -->
     <h2>Info voor Schiphol bezoekers</h2>
     <article class="informatie-content corona-info">
 
         <section>
-            <img src="images/mondkapje.jpg" />
+            <img src="images/mondkapje.jpg" alt="Man met mondkapje" />
             <h3>Moet ik een mondkapje dragen op Schiphol?</h3>
-            <p>We vragen je vriendelijk een mondkapje te dragen vanaf het moment dat je bij Schiphol binnen loopt tot in het vliegtuig, of als je juist bent uitstapt totdat je weer buiten staat.</p>
-            <a>Meer over mondkapjes <i class="fas fa-arrow-right"></i></a>
+            <p>We vragen je vriendelijk een mondkapje te dragen vanaf het moment dat je bij Schiphol binnen loopt tot in het vliegtuig.</p>
+            <div class="link-bottom">
+                <a>Meer over mondkapjes <i class="fas fa-arrow-right"></i></a>
+            </div>
         </section>
 
         <section>
-            <img src="images/verklaring.jpg" />
+            <img src="images/verklaring.jpg" alt="Verklarings papier" />
             <h3>De meest gestelde vragen</h3>
             <p>Omdat we jouw gezondheid en die van je medereizigers het allerbelangrijkst vinden, vragen we iedere reiziger om een gezondheidsverklaring zelf in te vullen en mee te brengen.</p>
-            <a>Vul je gezondheidsverklaring in <i class="fas fa-arrow-right"></i></a>
+            <div class="link-bottom">
+                <a>Vul je gezondheidsverklaring in <i class="fas fa-arrow-right"></i></a>
+            </div>
         </section>
 
 
         <section>
-            <img src="images/hand.jpg" />
+            <img src="images/hand.jpg" alt="Zwaaiende hand" />
             <h3>Mag ik iemand wegbrengen of ophalen?</h3>
-            <p>We vragen je als wegbrenger of ophaler buiten afscheid te nemen of gedag te zeggen. Zo houden we voldoende ruimte in de vertrek- en aankomsthallen voor reizigers om 1,5 meter afstand te houden.</p>
-            <a>Voor ophalers en wegbrengers <i class="fas fa-arrow-right"></i></a>
+            <p>We vragen je als wegbrenger of ophaler buiten afscheid te nemen of gedag te zeggen. Zo houden we voldoende ruimte in de vertrek- en aankomsthallen.</p>
+            <div class="link-bottom">
+                <a>Voor ophalers en wegbrengers <i class="fas fa-arrow-right"></i></a>
+            </div>
         </section>
 
         <section>
-            <img src="images/anderhalvemeter.jpg" />
+            <img src="images/anderhalvemeter.jpg" alt="1.5 meter afstand" />
             <h3>Hoe kan je afstand houden bij security?</h3>
             <p>Veiligheid is het allerbelangrijkst op Schiphol. Daarom gaat iedere reiziger door de securitycontrole. Nu op 1,5 meter afstand.</p>
-            <a>Zo houden we 1,5 meter afstand <i class="fas fa-arrow-right"></i></a>
+            <div class="link-bottom">
+                <a>Zo houden we 1,5 meter afstand <i class="fas fa-arrow-right"></i></a>
+            </div>
         </section>
 
         <section>
-            <img src="images/quarantaine.jpg" />
+            <img src="images/quarantaine.jpg" alt="14 dagen thuis quarantaine" />
             <h3>Wanneer moet ik in quarantaine?</h3>
             <p>De Nederlandse overheid adviseert dringend dat je 10 dagen in quarantaine gaat als je terugreist uit een land met een rood of oranje reisadvies.</p>
-            <a>Wat is een hoog-risico gebied? <i class="fas fa-arrow-right"></i></a>
+            <div class="link-bottom">
+                <a>Wat is een hoog-risico gebied? <i class="fas fa-arrow-right"></i></a>
+            </div>
         </section>
 
 
         <section>
-            <img src="images/maatregelen.jpg" />
+            <img src="images/maatregelen.jpg" alt="Iconen met maatregelen" />
             <h3>Welke maatregelen kan ik verwachten?</h3>
-            <p>Er zijn deze zomervakantie minder reizigers en we houden afstand van elkaar. Maar door afstand te houden kan het juist wat drukker voelen. Hoe kunnen we elkaar toch genoeg ruimte geven?</p>
-            <a>Wat wij doen om je te helpen <i class="fas fa-arrow-right"></i></a>
+            <p>Er zijn deze zomervakantie minder reizigers en we houden afstand van elkaar. Maar door afstand te houden kan het juist wat drukker voelen.</p>
+            <div class="link-bottom">
+                <a>Wat wij doen om je te helpen <i class="fas fa-arrow-right"></i></a>
+            </div>
         </section>
 
     </article>
+    <!-- EINDE 3E INFORMATIE CONTENT -->
 
 
 
+    <!-- BEGIN HANDICAP CONTENT -->
     <div class="handicap">
 
         <i class="fas fa-wheelchair"></i>
@@ -263,45 +302,111 @@
             <h2>Heb je extra hulp nodig?</h2>
             <a>Lees alles over assistentie <i class="fas fa-arrow-right"></i></a>
         </section>
+        <!-- BEGIN HANDICAP EINDE -->
 
+
+
+
+
+        <!-- BEGIN FOOTER -->
     </div>
     <footer>
-        <ul>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-        </ul>
+        <div class="first-footer">
+            <section>
+                <ul>
+                    <li>Vluchten</li>
+                    <li>Vertrek</li>
+                    <li>Aankomst</li>
+                    <li>Overstappen</li>
+                </ul>
 
-        <ul>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-        </ul>
+                <ul>
+                    <li>Te doen op Schiphol</li>
+                    <li>Winkels</li>
+                    <li>Eten &amp; drinken</li>
+                    <li>Relaxen &amp; doen</li>
+                    <li>Diensten</li>
+                </ul>
+            </section>
 
-        <ul>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-            <li>he</li>
-        </ul>
+            <section>
+                <ul>
+                    <li>Check-in</li>
+                    <li>Incheckmogelijkheden</li>
+                    <li>Bagageregels en checks</li>
+                    <li>Verwachte drukte</li>
+                </ul>
+
+                <ul>
+                    <li>Parkeren op Schiphol</li>
+                    <li>Alle parkeeropties</li>
+                    <li>Kort parkeren</li>
+                    <li>Lang parkeren</li>
+                    <li>Affiliate programma Parking</li>
+                </ul>
+            </section>
+            <section>
+                <ul>
+                    <li>Alle Schiphol websites</li>
+                    <li>Royal Schiphol Group</li>
+                    <li>Schiphol als buur</li>
+                    <li>Werken bij Schiphol Group</li>
+                    <li>Adverteren op Schiphol</li>
+                    <li>Real Estate</li>
+                    <li>Cargo</li>
+                    <li>Bedrijven op Schiphol</li>
+                    <li>Route Development</li>
+                </ul>
+            </section>
+            <section>
+
+                <ul>
+                    <li></li>
+                    <li>Reisprofessionals</li>
+                    <li>Airport Utilities</li>
+                    <li>Operations</li>
+                    <li>Jij en Schiphol</li>
+                    <li>Projecten op Schiphol</li>
+                    <li>Schiphol Telematics</li>
+                    <li>Developer center</li>
+                    <li>Innovatie</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="download-app">
+            <section>
+                <ul>
+                    <li>Download de Schiphol App</li>
+                    <li><img src="images/download.png" /></li>
+                </ul>
+            </section>
+        </div>
+
+
+
+
+
+        <div class="last-footer">
+            <section>
+                <ul>
+                    <li>© Schiphol 2020</li>
+                    <li>Privacy</li>
+                    <li>Schipholregels</li>
+                    <li>Nieuwsbrief</li>
+                    <li>Contact</li>
+
+                </ul>
+            </section>
+
+            <section class="logo-footer">
+                <img src="images/schiphol-logo-wit.png" />
+            </section>
+
+        </div>
+
     </footer>
+    <!-- EINDE FOOTER -->
 
 
 

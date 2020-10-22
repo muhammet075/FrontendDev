@@ -39,6 +39,9 @@ article {
     padding: 20px;
 }
 
+.link-bottom {
+    margin-top: 40px;
+}
 
 .displaynone {
     display: none;
@@ -69,6 +72,10 @@ header ul {
 header ul li {
     padding: 0 10px;
     margin: auto;
+}
+
+header a {
+    margin: 0px;
 }
 
 .banner img {
@@ -148,6 +155,7 @@ header ul li {
     display: block;
     width: 50%;
     margin: 0;
+    text-decoration: none;
 }
 
 .jumbotron-inner a:hover {
@@ -209,6 +217,10 @@ header ul li {
 
 .vluchtgegevens ul {
     list-style-type: none;
+}
+
+.vluchtgegevens h2 {
+    padding: 0px;
 }
 
 .vluchtgegevens ul li {
@@ -274,10 +286,76 @@ header ul li {
 
 
 
+.informatie-voorjevliegt {
+    padding: 10px 10%;
+}
+
+.informatie-voorjevliegt section {
+    margin: 50px 0px;
+}
+
+
+.tip-section {
+    background-color: #f4f7fc;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+
+.tip-section img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+video {
+    width: 100%;
+}
+
+.informatie-voorjevliegt h2 {
+    padding: 0px;
+}
+
+@media only screen and (min-width: 800px) {
+    video {
+        width: 100%;
+    }
+
+    .informatie-voorjevliegt section {
+        width: 60%;
+    }
+
+    .tip-section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10%;
+        text-align: inherit;
+    }
+
+    .tip-section section p {
+        width: 60%;
+        float: left;
+    }
+
+    .informatie-voorjevliegt h2 {
+        margin-bottom: 10px;
+    }
+
+    .tip-section h2 {
+        padding: 0px;
+    }
+
+
+}
+
+
+
 
 
 
 .informatie-content section {
+    border: 1px solid #ececec;
     margin: 20px 0px;
     box-shadow: 10px 10px 5px #e6e6e682;
 }
@@ -356,6 +434,7 @@ header ul li {
 
 
 
+
 .weetjes {
     background-color: #f4f7fb;
 }
@@ -394,6 +473,8 @@ header ul li {
 
 
 
+
+
 .handicap {
     display: flex;
     padding: 25px;
@@ -423,27 +504,100 @@ header ul li {
 
 
 
-
-
 footer {
-    flex-direction: column;
-    padding: 0px;
-    background-color: #1a61da;
+    background-color: #10397e;
 }
 
-footer ul {
-    text-align: center;
-    list-style-type: none;
-    padding: 20px;
-}
 
-footer ul li {
+footer section ul li {
+    font-size: 15px;
     color: #ffff;
+    text-align: inherit;
+    list-style-type: none;
 }
+
+footer section ul {
+    padding: 0px 50px;
+}
+
+.first-footer {
+    padding: 10px 0px 10px 0px;
+}
+
+footer div img {
+    width: 200px;
+    height: auto;
+}
+
+footer section ul {
+    margin: 50px 0px;
+}
+
+
+footer section ul li:nth-child(1) {
+    font-weight: 900;
+}
+
+
+.logo-footer {
+    text-align: center;
+}
+
 
 @media only screen and (min-width: 960px) {
     footer {
-        display: flex;
-        flex-direction: initial;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row dense;
     }
+
+
+    footer {
+        padding: 0% 12%;
+    }
+
+    footer div {
+        width: 100%;
+        grid-column-start: 1;
+        display: flex;
+    }
+
+
+    .download-app {
+        display: block;
+    }
+
+    footer section ul {
+        margin: 0px;
+    }
+
+
+    .last-footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .last-footer section {
+        margin: 0px 0px 40px 0px;
+    }
+
+    .last-footer section ul li {
+        float: left;
+    }
+
+
+    footer section ul li {
+        padding: 5px;
+    }
+
+    .first-footer {
+        padding: 50px 0px;
+    }
+
+    .first-footer section ul {
+        border-left: 1px solid #ffffff5e;
+        margin-bottom: 30px;
+    }
+
 }
