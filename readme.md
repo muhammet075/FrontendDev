@@ -13,10 +13,13 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 5. https://fontawesome.com/
 
 
+## Herkansing (week -)
+- Ik had een 6 gehaald. Om een hoger cijfer te krijgen heb ik verbeteringen toegepast aan mijn website. Ik heb gewerkt aan de tab index voor de blinde gebruikers. Na dat ik dat gefixt had, heb ik bijvoorbeeld dubbele ID's etc verwijderd en aangepast. Ook heb ik alt teksten toegevoegd aan afbeeldingen. Verder heb ik voor de herkansing mijn website upgeload bij validator.w3.org en heb ik de andere overige erros opgelost. Verder heb ik kleine CSS aanpassingen gemaakt (de puntjes op de i gezet). Daarnaast heb ik ook de readme bestand aangevuld zoals u kunt lezen :) -
+
 
 ## Eindgesprek (week 7/8)
 
--laatste puntjes op de i gezet-
+-laatste puntjes op de i gezet, de website had ik afgemaakt en gecontroleerd op de responsiveheid. Met media queries had ik de website volledig repsonsive gemaakt en de laatste css aanpassingen had ik ook gedaan-
 
 **Screenshot(s):**
 
@@ -27,32 +30,20 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 ## Voortgang 3 (week 6)
 
 -verbeteringen gebracht aan de website-
--footer afgemaakt-
+-footer afgemaakt, ik had ul's toegevoegd in de footer en met flexbox vormgegeven-
 
 
 
 ## Voortgang 2 (week 5)
 
--ik was bezig met de hamburger menu en ik was met grid en flexbox aan het spelen-
+-ik was bezig met de hamburger menu. Dat heb ik met javascript gemaakt. De hamburger knop is een checkbox. Als die getoggled, geklikt wordt wordt de class displaynone weggehaald of toegevoegd met een if-else statement. en ik was met grid en flexbox aan het spelen, dus had ik me daar in meer verdiept-
 
 
 ## Voortgang 1 (week 3)
 
 ### Stand van zaken
 
--ik was bezig om alle html elementen op de juiste plek toe te voegen en daarna te stijlen-
-
-**Screenshot(s):**
-
--screenshot(s) van hoe ver je bent-
-
-### Agenda voor meeting
-
--samen met je groepje opstellen-
-
-### Verslag van meeting
-
--na afloop snel uitkomsten vastleggen-
+-ik was bezig om alle html elementen op de juiste plek toe te voegen en daarna te stijlen. Ik was dus bezig om alle HTML elementen op de juiste plaats te zetten en daarna te gaan stijlen-
 
 
 
@@ -68,7 +59,3 @@ https://www.schiphol.nl/
 **Screenshot(s):**
 
 ![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/eindresultaat.png)
-
-**Breakdown-schets(en):**
-
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/dummy-image.svg)

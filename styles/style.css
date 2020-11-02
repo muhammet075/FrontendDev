@@ -76,6 +76,7 @@ header ul li {
 
 header a {
     margin: 0px;
+    text-decoration: none;
 }
 
 .banner img {
@@ -508,6 +509,10 @@ footer {
     background-color: #10397e;
 }
 
+footer a{
+    text-decoration: none;
+    color: #FFFF;
+}
 
 footer section ul li {
     font-size: 15px;
